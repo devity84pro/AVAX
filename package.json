@@ -1,0 +1,26 @@
+{
+  "name": "avax0-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.10",
+    "@tanstack/react-query": "^5.90.12",
+    "dotenv": "^17.2.3",
+    "next": "^16.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "viem": "^2.43.3",
+    "wagmi": "^2.19.5"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7"
+  }
+}
