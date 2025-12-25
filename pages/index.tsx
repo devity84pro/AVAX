@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useBalance, useReadContract, useWriteContract } from "wagmi";
 import { parseEther, formatEther } from "viem";
+import { avalancheFuji } from "wagmi/chains";
 import { POOL_ABI, ERC20_ABI } from "@/components/abis";
 
 const poolAddress = process.env.NEXT_PUBLIC_POOL_ADDRESS as `0x${string}`;
@@ -80,6 +81,8 @@ export default function Home() {
       abi: POOL_ABI,
       functionName: "deposit",
       value: avaxAmountWei,
+      account: address,
+      chain: avalancheFuji,
     });
   }
 
